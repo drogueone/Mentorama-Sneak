@@ -89,6 +89,7 @@ ul {
   width: 1469.16px;
   max-width: 100%;
   margin: 0 auto;
+  margin-left: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -290,10 +291,34 @@ ul {
   font-weight: 400;
   line-height: 28px;
 }
+/*SEÇÃO SENSAÇÃO DE ESTABILIZAÇÃO*/
 .container-sensacao-de-estabilizacao {
   width: 1440px;
   height: 600px;
   margin-left: 80px;
   margin-top: 160px;
   display: flex;
+}
+.container-sensacao-de-estabilizacao-titulo {
+  width: 581px;
+  margin-top: 40px;
+  padding-bottom: 28px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  background: linear-gradient(270.06deg, #dadada 20.97%, #9f9f9f 99.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.sensacao-de-estabilizacao-p {
+  width: 581px;
+  margin-left: 0;
+  margin-top: 24px;
+}
+.sensacao-de-estabilizacao-img {
+  width: 704px;
+  height: 600px;
+  margin-left: 155px;
 }
