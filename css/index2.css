@@ -1,0 +1,333 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  src: url(../fonts/gilroy/Gilroy-Regular.ttf);
+  font-family: 'Gilroy-Regular';
+}
+body {
+  font-family: 'Gilroy-Regular';
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-flex {
+  display: flex;
+}
+.container-flex-spaced {
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding: 20px 0;
+}
+.header-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+.header-list {
+  display: flex;
+}
+.header-list-item a {
+  color: #1f1f1f;
+  text-decoration: none;
+  padding: 12px;
+  margin: 0 12px;
+  font-size: 1.1rem;
+}
+.header-search {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #f2f2f2;
+  background-image: url('../img/lupa.png');
+  background-repeat: no-repeat;
+  background-position: 20px 18px;
+  background-size: 16px;
+  border-radius: 50px;
+  border: 0;
+  min-width: 232px;
+  padding: 14px 45px;
+  font-family: 'Gilroy-Regular';
+  font-size: 20px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.header-cart {
+  display: inline-block;
+  background: url('../img/imagem-carrinho.png') #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle; /*alinha verticalmente*/
+  margin-left: 24px;
+}
+.image {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  border: 3px solid #1f1f1f;
+  border-radius: 50px;
+}
+/*SEÇÃO SENAK. ULTRA LIGHT*/
+.container-first {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-sneak {
+  width: 100%;
+}
+.container-sneak-titulo {
+  font-weight: bold;
+  font-size: 104px;
+  line-height: 104px;
+  margin-top: 11px;
+  padding-bottom: 4rem;
+  background: linear-gradient(270.06deg, #dadada 20.97%, #9f9f9f 99.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.container-sneak-p {
+  width: 475px;
+  margin-top: 12px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  top: 24px;
+}
+.container-sneak-button {
+  width: 336px;
+  height: 64px;
+  margin-top: 4rem;
+  border: 2px solid #1f1f1f;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px 60px 18px 0px;
+  font-family: 'Gilroy-Regular';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  background-image: url('../img/Plus.png');
+  background-repeat: no-repeat;
+  background-position: 260px 22px;
+  background-size: 22px;
+}
+.container-sneak-tenis-img {
+  width: 1095px;
+  height: 541px;
+  margin-left: -300.84px;
+  margin-top: 20px;
+}
+.container-sneak-tenis {
+  background: linear-gradient(270.06deg, #dadada 20.97%, #9f9f9f 99.92%);
+  opacity: 0.4;
+  width: 581px;
+  height: 581px;
+  border-radius: 50%;
+}
+
+/*SEÇÃO CORRIDA - MASCULINO*/
+.container-corrida {
+  background-color: #f3f3f3;
+  width: 100%;
+  max-width: 1200px;
+  height: 767px;
+  margin: 100px auto;
+}
+.container-corrida-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.corrida-titulo {
+  margin-top: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+.corrida-cores {
+  width: 140px;
+  height: 32px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.branco {
+  border-radius: 50%;
+  background: linear-gradient(270.06deg, #e4e4e4 20.97%, #ffffff 99.92%);
+  border: 2px solid rgba(31, 31, 31, 0.5);
+  width: 32px;
+}
+.dourado {
+  border-radius: 50%;
+  background: linear-gradient(277.74deg, #ffe08d 9.16%, #ffb757 91.03%);
+  opacity: 0.5;
+  border: 2px solid #ffffff;
+  width: 32px;
+}
+.cinza {
+  border-radius: 50%;
+  background: linear-gradient(270.06deg, #464646 20.97%, #d3d3d3 99.92%);
+  opacity: 0.5;
+  border: 2px solid #ffffff;
+  width: 32px;
+}
+.grafite {
+  border-radius: 50%;
+  background: linear-gradient(270.06deg, #232323 20.97%, #000000 99.92%);
+  opacity: 0.5;
+  border: 2px solid #ffffff;
+  width: 32px;
+}
+.container-corrida img {
+  width: 464px;
+  height: 241.38px;
+  margin-top: 32px;
+}
+.corrida-tenis-descricao {
+  margin-top: 45.62px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+.corrida-button {
+  width: 336px;
+  height: 64px;
+  margin-top: 64px;
+  background-color: #f3f3f3;
+  border: 2px solid #1f1f1f;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: 'Gilroy-Regular';
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/*SEÇÃO APRESENTAÇÃO PRODUTO*/
+.section-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* SEÇÃO LEVEZA E AGILIDADE*/
+.container-leveza-agilidade {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  margin-top: 200px;
+  /* margin-left: 80px; */
+}
+.leveza-agilidade-titulo {
+  width: 581px;
+  margin-top: 40px;
+  padding-bottom: 28px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  background: linear-gradient(270.06deg, #dadada 20.97%, #9f9f9f 99.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.leveza-agilidade-p {
+  width: 581px;
+  height: 112px;
+  margin-top: 28px;
+}
+.leveza-agilidade-img img {
+  width: 704px;
+  height: 600px;
+  margin-left: 155px;
+}
+/*SEÇÃO AMORTECIMENTO IMEDIATO*/
+.container-amortecimento-imediato {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 160px;
+  /* margin-left: 80px; */
+  display: flex;
+}
+.amortecimento-imediato-img {
+  width: 704px;
+  height: 600px;
+}
+.amortecimento-imediato-text {
+  width: 581px;
+  margin-left: 155px;
+  margin-top: 8px;
+}
+.amortecimento-imediato-titulo {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  background: linear-gradient(270.06deg, #dadada 20.97%, #9f9f9f 99.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.amortecimento-imediato-p {
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/*SEÇÃO SENSAÇÃO DE ESTABILIZAÇÃO*/
+.container-sensacao-de-estabilizacao {
+  width: 100%;
+  max-width: 1200px;  
+  /* margin-left: 80px; */
+  margin-top: 160px;
+  display: flex;
+}
+.container-sensacao-de-estabilizacao-titulo {
+  width: 581px;
+  margin-top: 40px;
+  padding-bottom: 28px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  background: linear-gradient(270.06deg, #dadada 20.97%, #9f9f9f 99.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.sensacao-de-estabilizacao-p {
+  width: 581px;
+  margin-left: 0;
+  margin-top: 24px;
+}
+.sensacao-de-estabilizacao-img {
+  width: 704px;
+  height: 600px;
+  margin-left: 155px;
+}

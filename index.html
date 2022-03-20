@@ -1,136 +1,149 @@
 <!DOCTYPE html>
-<html lang="pt"> <!--sempre alterar a linguagem-->
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!--Fontes do google -->
+  <title>Sneak.</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <!--Elementos principais de layout-->
-  <header class="header"> <!--cabeçalho da página--> 
-    <div class="container container-flex container-flex-spaced">
-      <h1 class="header-title">SNEAK.</h1>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-list-item"><a href="#">Masculino</a></li>
-          <li class="header-list-item"><a href="#">Feminino</a></li>
-          <li class="header-list-item"><a href="#">Novidades</a></li>
-          <li class="header-list-item"><a href="#">Ofertas</a></li>
-          <li class="header-list-item"><a href="#">Coleções</a></li>
+
+  <header class="flex-container">
+
+    <h1>SNEAK.</h1>
+    
+    <div class="flex-container">
+      <nav>
+        <ul class="flex-container flex-1">
+          <li><a class="link" href="#">Masculino</a></li>
+          <li><a class="link" href="#">Feminino</a></li>
+          <li><a class="link" href="#">Novidades</a></li>
+          <li><a class="link" href="#">Ofertas</a></li>
+          <li><a class="link" href="#">Coleções</a></li>
         </ul>
       </nav>
-      <div class="header-action">
-        <input class="header-search" type="text" placeholder="Procurar"/>
-        <div class="header-cart">
+    </div>
+
+    <div class="flex-container">
+      <input type="text" placeholder="Procurar"/>
+        <div>
+          <img src="./img/imagem-carrinho.png" alt="ícone do carrinho">
         </div>
       </div>
-  </div>
+    </div>
+
   </header>
+
   <main>
-    <section class="container-first"><!--divide o HTML em blocos ou sessões-->
-      <div class="container-sneak">
-        <h2 class="container-sneak-titulo">SNEAK. <br/> Ultra Light</h2>
-        <p class="container-sneak-p">Os tênis SNEAK foram criados especificamente para treinos de circuito, seja para aulas fitness em casa ou para sua própria rotina de treinos.</p>
-        <button class="container-sneak-button">Adicionar ao carrinho</button>
+
+    <section>
+      <div>
+        <h2>SNEAK. <br/> Ultra Light</h2>
+        <p>Os tênis SNEAK foram criados especificamente para treinos de circuito, seja para aulas fitness em casa ou para sua própria rotina de treinos.</p>
+        <button>Adicionar ao carrinho</button>
       </div>
-      <div class="container-sneak-tenis">
-        <img class="container-sneak-tenis-img"  src="./img/tenis.png" />
+      <div>
+        <img src="./img/tenis.png" />
       </div>
     </section>
-    <aside class="container-corrida container-corrida-flex">
-      <h2 class="corrida-titulo">CORRIDA - MASCULINO</h2>
-      <ul class="corrida-cores">
+
+    <aside>
+      <h2>corrida - masculino</h2><!--Em maúsculo-->
+      <ul>
         <li class="cores-item branco"></li>
         <li class="cores-item dourado"></li>
         <li class="cores-item cinza"></li>
         <li class="cores-item grafite"></li>
       </ul>
       <img src="./img/tenis-branco.png" alt="Tênis branco"/>
-      <span class="corrida-tenis-descricao">Branco</span>
-      <button class="corrida-button">Adicionar ao carrinho</button>
+      <span>Branco</span>
+      <button>Adicionar ao carrinho</button>
     </aside>
-    <section class="container-leveza-agilidade">
-      <div class="leveza-agilidade-position">
-        <h2 class="leveza-agilidade-titulo">Leveza e agilidade</h2>
-        <p class="leveza-agilidade-p">A construção ligeira de espuma e malha do SNEAK proporcionam conforto e agilidade durante o exercício. Um “burpe e break” na parte frontal do pé torna-o extremamente flexível para fazer prancha ou Mountain Climber.</p>
+
+    <section>
+      <div>
+        <h2>Leveza e agilidade</h2>
+        <p>A construção ligeira de espuma e malha do SNEAK proporcionam conforto e agilidade durante o exercício. Um “burpe e break” na parte frontal do pé torna-o extremamente flexível para fazer prancha ou Mountain Climber.</p>
       </div>
-      <div class="leveza-agilidade-img">
+      <div>
         <img src="./img/leveza-e-agilidade.png" alt="Tênis Hylo"/>
-    </div>
+      </div>
     </section>
-    <section class="container-amortecimento-imediato">
-      <div class="amortecimento-imediato-img">
+
+    <section>
+      <div>
         <img src="./img/amortecimento-imediato.png" alt="Amortecimento Imediato" />
       </div>
-      <div class="amortecimento-imediato-text">
-        <h2 class="amortecimento-imediato-titulo">Amortecimento imediato</h2>
-        <p class="amortecimento-imediato-p">A espuma grossa sob o pé absorve o impacto e retorna a energia ao correr com os joelhos altos e ao saltar. O suporte de arco da parte média do pé garante conforto durante todo o treino.</p>
+      <div>
+        <h2>Amortecimento imediato</h2>
+        <p>A espuma grossa sob o pé absorve o impacto e retorna a energia ao correr com os joelhos altos e ao saltar. O suporte de arco da parte média do pé garante conforto durante todo o treino.</p>
       </div>
     </section>
-    <section class="container-sensacao-de-estabilizacao">
-      <div class="sensacao-de-estabilizacao-text">
-        <h2 class="container-sensacao-de-estabilizacao-titulo">Sensação de estabilização</h2>
-        <p class="sensacao-de-estabilizacao-p">O outrigger - a proteção lateral - dá estabilidade ao pé ao fazer movimentos laterais, como por exemplo, o Skater Squat. </p>
+
+    <section>
+      <div>
+        <h2>Sensação de estabilização</h2>
+        <p>O outrigger - a proteção lateral - dá estabilidade ao pé ao fazer movimentos laterais, como por exemplo, o Skater Squat. </p>
       </div>
-      <div class="sensacao-de-estabilizacao-img">
+      <div>
         <img src="./img/sensacao-de-estabilizacao.png" alt="estabilização">
       </div>
     </section>
-    <aside class="section-run"><!--ñ possui muito conteúdo agregado-->
+
+    <aside>
         <span>
           <img src="./img/arrow.png" /> 
         </span>
-        <p class="corra">CORRA</p>        
-        <p class="como-se-o-mundo">COMO SE O MUNDO</p>
-        <p class="dependesse-de-voce">DEPENDESSE DE VOCÊ</p>
+        <p>CORRA <br/> COMO SE O MUNDO <br/> DEPENDESSE DE VOCÊ</p>
     </aside>
-    <section class="contato-e-localizacao">
-      <div class="mapa">
+
+    <section>
+      <div>
         <img src="./img/map.png" alt="Nosso Endereço">
       </div>
-      <div class="contato">
+      <div>
         <h3>Entre em contato</h3>
         <form action="">
-          <input class="form-nome" type="text" placeholder="Nome" /><br>
-          <input class="form-email" type="email" placeholder="Email" /><br>
-          <textarea class="form-comentarios" placeholder="Comentários"></textarea><br>
-          <label class="concordo-com-a-politica"><!--Sempre acompanha o tipo checkbox-->
-            <input class="form-checkbox" type="checkbox" value="privacidade"/>
+          <input type="text" placeholder="Nome" /><br>
+          <input type="email" placeholder="Email" /><br>
+          <textarea placeholder="Comentários"></textarea><br>
+          <label>
+            <input type="checkbox" value="privacidade"/>
             Concordo com a política de privacidade
           </label>
           <button>Enviar</button>
         </form>
       </div>
     </section>
+
   </main>
-  <footer class="sneak-footer">
+
+  <footer>
     <h3>SNEAK.</h3>
     <div>
-      <ul class="sobre-sneak">
-        <!--Para criar várias li digite li*(nº de itens) TAB
-        no caso abaixo: li*5>a-->
+      <ul>
         <li>SOBRE SNEAK</li>
         <li><a href="#">Novidades</a></li>
         <li><a href="#">Carreira</a></li>
         <li><a href="#">Para investidores</a></li>
         <li><a href="#">Cuidado com o meio ambiente</a></li>
       </ul>
-      <ul class="ajuda">
+
+      <ul>
         <li>AJUDA</li>
         <li><a href="#">Status do pedido</a></li>
         <li><a href="#">Entregas e frete</a></li>
         <li><a href="#">Trocas e devoluções</a></li>
         <li><a href="#">Opções de pagamento</a></li>
       </ul>
-      <ul class="redes-sociais">
+
+      <ul>
         <li>REDES SOCIAIS</a></li>
         <li><a href="instagram.com" target="_blank">
           <img src="./img/Instagram.png" alt="instagram" />
-        </a></li><!--tarquet _blanl permite abrir itens em uma nova aba-->
+        </a></li>
         <li><a href="twitter.com"target="_blank">
           <img src="./img/Twitter.png" alt="twitter" />
         </a></li>
@@ -139,14 +152,16 @@
         </a></li>
       </ul>
     </div>
+
   </footer>
-  <div class="mentorama">
-    <aside class="designed">
+
+  <div>
+    <aside>
       DESIGNED BY
     </aside>
-    <aside class="mentorama-img">
+    <aside>
       <img src="./img/mentorama.png" alt="mentorama">
     </aside>
-</div>
+  </div>
 </body>
 </html>
