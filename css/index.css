@@ -52,6 +52,52 @@ h3 {
   color: black;
   text-transform: uppercase;
 }
+input[type="text"], input[type="email"], textarea {
+  height: 65px;
+  width: 100%;
+  max-width: 520px;
+  background-color: #fff;
+  color: #969696;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+textarea {
+  resize: none;
+  height: 260px;
+  padding-top: 24px;
+}
+
+label {
+  color: #969696;
+  display: flex;
+  align-items: center;
+  padding-bottom: 34px;
+  background-color: #f3f3f3;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: hidden;
+  margin: 10px 10px 10px 0;
+}
+
+input[type="checkbox"]::before {
+  content: " ";
+  width: 28px;
+  height: 28px;
+  border: 2px solid #D2D2D2;
+  border-radius: 4px;
+  background-color: white;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
 
 button {
   height: 65px;
@@ -93,6 +139,13 @@ button:hover {
   align-items: center;
 }
 
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .section-margin-200 {
   margin-bottom: 200px;
 }
@@ -127,7 +180,7 @@ header {
   font-family: 'Gilroy-Medium';
 }
 
-header input {
+header div input.search{
   background-color: #F2F2F2;
   border: none;
   height: 45px;
@@ -142,6 +195,7 @@ header input {
   background-repeat: no-repeat;
   background-position: 18px center;
   margin-right: 1rem;
+  margin-bottom: 0;
 }
 
 header div .cart {
@@ -248,10 +302,10 @@ main .quality .text-content {
 
 main .banner {
   width: 100%;
-  max-width: 1600px;
   height: 720px;
   background: url(../img/fundo-corra-como-se-o-mundo-dependesse-de-voce.png);
   padding: 1rem;
+  background-size: cover;
 }
 
 main .banner span {
@@ -273,4 +327,75 @@ main .banner p {
   text-transform: uppercase;
   color: white;
   position: relative;
+}
+
+main .contact {
+  align-items: unset;
+}
+
+main .contact div:first-child img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+main .contact div:last-child {
+  background-color: #F3F3F3;
+  padding: 48px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+main .contact div:last-child h3 {
+  text-transform: unset;
+  margin-bottom: 40px;
+}
+
+main .contact button {
+  width: 100%;
+  max-width: 100%;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 56px 80px;
+}
+
+footer > div.flex-container {
+  align-items: unset;
+}
+
+footer .list-tittle {
+  font-family: 'Gilroy-Medium';
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+
+footer ul li a {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  color: #1f1f1f;
+}
+
+footer .social-icons {
+  justify-content: flex-start;
+}
+
+footer .social-icons li {
+  margin-right: 10px;
+}
+
+.mentorama {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px 0;
+  font-family: 'Gilroy-Medium';
+  background-color: #F3F3F3;
+}
+
+.mentorama aside:first-child {
+  margin-right: 8px;
 }

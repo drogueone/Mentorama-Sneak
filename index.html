@@ -27,7 +27,7 @@
     </div>
 
     <div class="flex-container">
-      <input type="text" placeholder="Procurar"/>
+      <input class="search" type="text" placeholder="Procurar"/>
       <div class="cart">
           <img src="./img/imagem-carrinho.svg" alt="ícone do carrinho">
        </div>
@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <aside class="container banner section-margin-200">
+    <aside class="banner section-margin-200">
         <span>
           <img src="./img/arrow.png" />
           <p>corra</p>
@@ -99,11 +99,9 @@
         <p>como se o mundo <br/> dependesse de você</p>
     </aside>
 
-    <section class="container">
-      <div>
-        <img src="./img/map.png" alt="Nosso Endereço">
-      </div>
-      <div>
+    <section class="contact container flex-container section-margin-160">
+      <img src="./img/map.png" alt="Nosso Endereço">
+      <div class="flex-1">
         <h3>Entre em contato</h3>
         <form action="">
           <input type="text" placeholder="Nome" /><br>
@@ -120,42 +118,44 @@
 
   </main>
 
-  <footer class="container">
-    <h3>SNEAK.</h3>
-    <div>
-      <ul>
-        <li>SOBRE SNEAK</li>
+  <footer class="">
+    <div class="container flex-container">
+      <h3>SNEAK.</h3>
+      <ul class="flex-container-column">
+        <li class="list-tittle">SOBRE SNEAK</li>
         <li><a href="#">Novidades</a></li>
         <li><a href="#">Carreira</a></li>
         <li><a href="#">Para investidores</a></li>
         <li><a href="#">Cuidado com o meio ambiente</a></li>
       </ul>
 
-      <ul>
-        <li>AJUDA</li>
+      <ul class="flex-container-column">
+        <li class="list-tittle">AJUDA</li>
         <li><a href="#">Status do pedido</a></li>
         <li><a href="#">Entregas e frete</a></li>
         <li><a href="#">Trocas e devoluções</a></li>
         <li><a href="#">Opções de pagamento</a></li>
       </ul>
 
-      <ul>
-        <li>REDES SOCIAIS</a></li>
-        <li><a href="instagram.com" target="_blank">
-          <img src="./img/Instagram.png" alt="instagram" />
-        </a></li>
-        <li><a href="twitter.com"target="_blank">
-          <img src="./img/Twitter.png" alt="twitter" />
-        </a></li>
-        <li><a href="facebook.com" target="_blank">
-          <img src="./img/Facebook.png" alt="facebook" />
-        </a></li>
+      <ul class="social-icons flex-container-column">
+        <li class="list-tittle">REDES SOCIAIS</a></li>
+        <div class="flex-container">
+          <li><a href="instagram.com" target="_blank">
+            <img src="./img/Instagram.png" alt="instagram" />
+          </a></li>
+          <li><a href="twitter.com"target="_blank">
+            <img src="./img/Twitter.png" alt="twitter" />
+          </a></li>
+          <li><a href="facebook.com" target="_blank">
+            <img src="./img/Facebook.png" alt="facebook" />
+          </a></li>
+        </div>
       </ul>
     </div>
 
   </footer>
 
-  <div>
+  <div class="mentorama">
     <aside>
       DESIGNED BY
     </aside>
